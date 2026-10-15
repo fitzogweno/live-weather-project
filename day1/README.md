@@ -1,38 +1,59 @@
-OpenWeatherMap API Exercise
+Travel Weather Tool 🌦️
 Overview
+The Travel Weather Tool is a Python command-line application that helps travellers learn about a destination before visiting.
 
-This project uses Python to retrieve current weather data from the OpenWeatherMap API.
+It asks the user to enter a city name, retrieves live weather data from OpenWeatherMap, and fetches country information from the REST Countries API. It combines the responses into a single report and saves the results as a JSON file.
 
-It demonstrates how to:
+Problem It Solves
+Travellers often need to check weather conditions and basic country information separately when planning a trip. This tool brings those details together in one simple command-line application.
 
-Call an authenticated API using an API key.
-Load credentials securely from a .env file.
-Exclude sensitive files using .gitignore.
-Handle HTTP errors such as invalid API keys, missing cities, and rate limits.
-Display weather information in a readable format.
+Features
+Accepts a city name from the user.
+Retrieves current weather conditions and temperature.
+Fetches country information, including region, population, and currency.
+Combines data from two APIs.
+Displays results in a readable format.
+Saves the combined response to travel_info.json.
+Handles invalid city names, network errors, and unavailable country information.
+Technologies Used
+Python
+Requests
+python-dotenv
+OpenWeatherMap API
+REST Countries API
 Requirements
-Python 3
+Python 3.10 or newer
 An OpenWeatherMap API key
-The requests and python-dotenv packages
-Setup
-Clone or download this repository.
+An internet connection
+Installation and Setup
+Clone this repository or download the project.
+Open a terminal in the project directory.
 Install the required packages:
+   python -m pip install requests python-dotenv
+Create a .env file in the project root and add your API key:
+   OPENWEATHER_API_KEY=your_actual_api_key
+Run the application:
+   python day3_travel_info.py
+Enter a city name when prompted.
+Example
+Welcome to the Travel Weather Tool!
+Get weather and country information for your destination.
 
-python -m pip install requests python-dotenv
+Enter a city name: Nairobi
+The application displays the weather report and country details, then saves the combined data to travel_info.json.
 
-Create a .env file in the project folder containing:
+Weather results depend on the live API response and may vary.
 
-OPENWEATHER_API_KEY=your_actual_api_key_here
+APIs Used
+OpenWeatherMap Current Weather API
+REST Countries API
+Error Handling
+The application handles missing API keys, invalid city names, failed network requests, unavailable country information, and file-writing errors.
 
-Replace the placeholder with your own API key. Never publish your real key.
-Run the script
-
-Run:
-
-python day2_weather.py
-
-The script retrieves weather information for Nairobi and prints the temperature, conditions, and humidity.
-
-Security
-
-The .env file is excluded using .gitignore. Never commit API keys or other secrets to GitHub.
+Future Improvements
+Support multiple destinations in one session.
+Add a weather forecast.
+Include travel recommendations based on weather conditions.
+Add automated tests.
+Author
+Created as a Python API integration exercise.
