@@ -3,8 +3,8 @@ from urllib.request import urlopen
 from urllib.error import HTTPError, URLError
 
 # Nairobi, Kenya coordinates
-LATITUDE = -1.2864
-LONGITUDE = 36.8172
+LATITUDE = -20.01816
+LONGITUDE = 57.58015
 
 URL = (
     "https://api.open-meteo.com/v1/forecast"
@@ -60,7 +60,7 @@ def get_weather():
         print("=" * 38)
         print("         LIVE WEATHER REPORT")
         print("=" * 38)
-        print("Location:       Nairobi, Kenya")
+        print("Location:       Grand Baie, Mauritius")
         print(f"Observed at:    {observed_at}")
         print(f"Temperature:    {temperature:.1f}{units['temperature_2m']}")
         print(f"Feels like:     {feels_like:.1f}{units['apparent_temperature']}")
