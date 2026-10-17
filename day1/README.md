@@ -1,3 +1,31 @@
+## Kenyan Business Currency Tracker 💱
+
+A Python command-line tool that converts a price in Kenyan Shillings (KES) to USD, EUR, and GBP using live exchange rates from ExchangeRate-API. Built for Kenyan businesses quoting international clients.
+
+## Setup
+
+1. Clone the repo
+2. Install dependencies:
+   pip install requests python-dotenv
+3. Create a `.env` file in the project root with:
+   EXCHANGE_RATE_API_KEY=your_key_here
+4. Get a free API key at exchangerate-api.com
+
+## Usage
+
+python day1/kes_tracker.py
+
+## Example Output
+
+=== Kenyan Business Currency Tracker ===
+Enter amount in KES: 100000
+
+KES 100,000.00 is approximately:
+  USD: 770.50
+  EUR: 685.30
+  GBP: 578.50
+
+---
 Travel Weather Tool 🌦️
 Overview
 The Travel Weather Tool is a Python command-line application that helps travellers learn about a destination before visiting.
