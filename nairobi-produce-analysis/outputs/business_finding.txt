@@ -1,0 +1,19 @@
+
+NAIROBI PRODUCE MARKET ANALYSIS
+
+Analysis period: January to June 2026
+
+Number of observations: 905
+
+Most volatile vegetable: Tomatoes
+
+Peak volatility month: 2026-05
+
+Peak monthly daily-return volatility:
+14.06%
+
+Volatility is measured using the standard deviation
+of daily percentage price changes.
+
+This analysis uses generated sample data and should
+not be interpreted as actual Nairobi market prices.
